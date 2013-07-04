@@ -12,36 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <h4>Nimi</h4>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :venue %><br />
+    <h4>Tapahtumapaikka</h4>
     <%= f.text_field :venue %>
   </div>
   <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
+   <h4>Kaupunki</h4>
+     <%= f.text_field :city %>
   </div>
   <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
+   <h4>Päivämäärä</h4>
+     <%= f.text_field :date %>
   </div>
   <div class="field">
-    <%= f.label :start_time %><br />
-    <%= f.time_select :start_time %>
+   <h4>Kellonaika</h4>
+     <p><%= f.text_field :start_time %> – <%= f.text_field :end_time %></p>
   </div>
   <div class="field">
-    <%= f.label :end_time %><br />
-    <%= f.time_select :end_time %>
+   <h4>Hinta</h4>
+     <%= f.number_field :price %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
-    <%= f.number_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+   <h4>Kuvaus (esiintyjät yms.)</h4>
+     <%= f.text_area :description %>
   </div>
   <div class="actions">
     <%= f.submit %>

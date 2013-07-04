@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+var jq = $.noConflict();
+
+$(document).ready(function() {
+    $("#event_date").datepicker({
+    	minDate: new Date(),
+    	dateFormat: 'dd.mm.yy',
+    	firstDay: 1
+    });
+});

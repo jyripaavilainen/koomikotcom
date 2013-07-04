@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+input#event_start_time, input#event_end_time {
+	width: 87px;
+}
